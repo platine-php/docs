@@ -1,0 +1,166 @@
+# Project information
+site_name: 'Platine Framework Docs'
+site_description: 'Platine Framework Documentation'
+site_author: 'Platine Team'
+site_url: 'https://github.com/platine-php/docs'
+use_directory_urls: false
+edit_uri: ''
+
+#Pages
+nav:
+    - Welcome: index.md
+    - License: license.md
+    - Requirements: requirements.md
+    - Credits: credits.md
+    - Contribution: contribution.md
+    - Getting Started:
+        - getting-started/installation.md
+        - getting-started/configuration.md
+        - getting-started/architecture.md
+        - getting-started/starter-project.md
+        - getting-started/deployment.md
+    - General Concepts:
+        - general/lifecycle.md
+        - general/container.md
+        - general/providers.md
+    - Overview:
+        - overview/routing.md
+        - overview/middleware.md
+        - overview/action.md
+        - overview/request.md
+        - overview/response.md
+        - overview/template.md
+        - overview/url-generation.md
+        - overview/session.md
+        - overview/validation.md
+        - overview/error-handling.md
+        - overview/logging.md
+    - Advanced Concepts:
+        - advanced/console.md
+        - advanced/cache.md
+        - advanced/collections.md
+        - advanced/events.md
+        - advanced/filesystem.md
+        - advanced/helpers.md
+        - advanced/translation.md
+        - advanced/mail.md
+        - advanced/package-development.md
+    - Security:
+        - security/authentication.md
+        - security/authorization.md
+        - security/encryption.md
+        - security/hashing.md
+    - Database:
+        - database/getting-started.md
+        - database/configuration.md
+        - database/query-builder.md
+        - database/migrations.md
+        - database/seeder.md
+    - ORM:
+        - orm/getting-started.md
+        - orm/entity.md
+        - orm/repository.md
+        - orm/relationships.md
+        - orm/serialization.md
+    - Packages:
+        - packages/index.md
+        - packages/cache.md
+        - packages/collection.md
+        - packages/config.md
+        - packages/console.md
+        - packages/container.md
+        - packages/cookie.md
+        - packages/database.md
+        - packages/docx-template.md
+        - packages/event-dispatcher.md
+        - packages/filesystem.md
+        - packages/http.md
+        - packages/lang.md
+        - packages/logger.md
+        - packages/mail.md
+        - packages/orm.md
+        - packages/pagination.md
+        - packages/pdf.md
+        - packages/request-handler.md
+        - packages/router.md
+        - packages/security.md
+        - packages/session.md
+        - packages/stdlib.md
+        - packages/template.md
+        - packages/upload.md
+        - packages/user-agent.md
+        - packages/validator.md
+
+# Repository
+repo_name: 'platine-php/app'
+repo_url: 'https://github.com/platine-php/app'
+
+# Copyright
+copyright: 'Copyright &copy; 2020 Platine Framework'
+
+# Configuration
+theme:
+  name: material
+  custom_dir: 'theme'
+  locale: 'en'
+  palette:
+    scheme: slate
+    primary: teal
+    accent: 'indigo'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  highlightjs: false
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.ico
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - search.suggest
+    - header.autohide
+
+# Customization
+extra:
+  # manifest: manifest.webmanifest
+  generator: false
+  version:
+    # provider: mike
+    default: stable
+  social:
+    - icon: 'material/github'
+      name: Github
+      link: 'https://github.com/platine-php/app'
+extra_css:
+  - 'assets/css/custom.css'
+  
+extra_javascript:
+  - 'assets/js/custom.js'
+
+# Google Analytics
+#google_analytics:
+#  - 'UA-XXXXXXXX-X'
+#  - 'auto'
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - pymdownx.highlight:
+      linenums: True
+      pygments_style: emacs
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - toc:
+      permalink: true
+
+      
+plugins:
+  - search
+  # - mike:
+  #  version_selector: true
+  #  css_dir: css             
+  #  javascript_dir: js       
+  #  canonical_version: null  
+

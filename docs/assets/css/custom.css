@@ -1,0 +1,21 @@
+.md-typeset p, .md-typeset li{
+	font-size: 16px;
+}
+
+.md-typeset h1, .md-typeset h2{
+    margin: 1rem 0;
+    line-height: auto;
+}
+
+.select-version {
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    display: inline;
+    font-size: 12px;
+    font-family: "Helvetica","Arial",sans-serif;
+    margin: 0;
+    padding: 4px 0;
+    width: auto;
+    background: 0 0;
+    text-align: left;    
+}
