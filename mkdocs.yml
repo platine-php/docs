@@ -44,12 +44,14 @@ nav:
         - advanced/helpers.md
         - advanced/translation.md
         - advanced/mail.md
+        - advanced/pagination.md
         - advanced/package-development.md
     - Security:
         - security/authentication.md
         - security/authorization.md
         - security/encryption.md
         - security/hashing.md
+        - security/jwt.md
     - Database:
         - database/getting-started.md
         - database/configuration.md
