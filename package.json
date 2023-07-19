@@ -1,0 +1,22 @@
+{
+  "name": "config",
+  "version": "0.0.1",
+  "description": "Platine Config Documentation",
+  "main": "index.js",
+  "authors": {
+    "name": "Platine Team",
+    "email": "dev@platine-php.com"
+  },
+  "repository": "platine-php/config",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  },
+  "dependencies": {
+    "vuepress-plugin-code-copy": "^1.0.6"
+  }
+}

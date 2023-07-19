@@ -1,0 +1,42 @@
+on:
+  push:
+    branches:
+      - master
+name: Deploy framework docs (Dev)
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    defaults:
+        run:
+          working-directory: docs
+    steps:
+      - name: Get latest code
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+
+      - name: Setup Yarn
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
+          dir: docs
+
+      - name: Build Packages
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build
+          dir: docs
+
+      - name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.ftp_host }}
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}
+          local-dir: docs/dist/
+          server-dir: ${{ vars.DOCS_WWW }}
+          state-name: ../.ftp-deploy-sync-state.json
