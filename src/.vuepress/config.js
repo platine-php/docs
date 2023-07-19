@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'platine-php/config',
+  title: 'Platine Documentation',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -31,13 +31,13 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: 'platine-php/config',
+    repo: 'platine-php/docs',
     editLinks: true,
-    docsDir: 'docs/src',
+    docsDir: 'src',
     repoLabel: 'Github',
     editLinkText: '',
     lastUpdated: 'Last Updated',
-    logo: 'logo.png',
+    logo: '/assets/img/logo.png',
     sidebar: 'auto',
     smoothScroll: true,
     searchPlaceholder: 'Search ...',

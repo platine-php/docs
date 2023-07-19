@@ -1,11 +1,11 @@
 ---
 home: true
-heroImage: /logo.png
-tagline: Platine Config Documentation
+heroImage: /assets/img/logo.png
+tagline: Platine Framework Documentation
 actionText: Quick Start →
 actionLink: /overview
 features:
-- title: Easy to use
+- title: Easy to use 
   details: Usage of Platine Config is not complicated like others librairies.
 - title: Dot notation support
   details: Simplified access to nested configuration using `dot.notation` syntax.

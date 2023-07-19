@@ -1,13 +1,13 @@
 {
-  "name": "config",
+  "name": "platine-php-docs",
   "version": "0.0.1",
-  "description": "Platine Config Documentation",
+  "description": "Platine Framework Documentation",
   "main": "index.js",
   "authors": {
     "name": "Platine Team",
     "email": "dev@platine-php.com"
   },
-  "repository": "platine-php/config",
+  "repository": "platine-php/docs",
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src"
