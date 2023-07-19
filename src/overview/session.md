@@ -296,9 +296,9 @@ Sometimes you may wish to store items in the session for the next request. You m
     }
 }
 ```
-!!! tips
-	Session key can be used with "dot" notation.
-
+::: tip Note
+Session key can be used with "dot" notation.
+::: 
 ## Adding Custom Session Drivers
 
 #### Implementing The Driver

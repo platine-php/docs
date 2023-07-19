@@ -160,9 +160,9 @@ $app->bind(ErrorHandlerInterface::class, function (ContainerInterface $app) {
     return new ErrorHandler($app->get(LoggerInterface::class));
 });
 ```
-!!! important
-	You need to bind classes into the container before use it. The container does not need to be instructed on how to build these objects if their dependencies are concrete, since it can automatically resolve these objects using reflection.
-
+::: warning 
+You need to bind classes into the container before use it. The container does not need to be instructed on how to build these objects if their dependencies are concrete, since it can automatically resolve these objects using reflection.
+::: 
 #### Binding A Singleton
 
 The `share` method binds a class or interface into the container that should only be resolved one time. Once a singleton binding is resolved, the same object instance will be returned on subsequent calls into the container:

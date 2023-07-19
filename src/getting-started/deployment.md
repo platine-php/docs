@@ -88,9 +88,9 @@ When deploying to production, make sure that you are optimizing Composer's class
 ```
 composer install --optimize-autoloader --no-dev
 ```
-!!! tips
-	In addition to optimizing the autoloader, you should always be sure to include a `composer.lock` file in your project's source control repository. Your project's dependencies can be installed much faster when a `composer.lock` file is present.
-
+::: tip
+In addition to optimizing the autoloader, you should always be sure to include a `composer.lock` file in your project's source control repository. Your project's dependencies can be installed much faster when a `composer.lock` file is present.
+:::
 ### Optimizing Template Rendering
 
 When deploying your application to production, you should make sure that your template files is cached, see `Platine\Template\Template` for more detail regarding how to use cache.

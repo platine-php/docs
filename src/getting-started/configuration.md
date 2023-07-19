@@ -20,9 +20,9 @@ Platine's default `.env` file contains some common configuration values that may
 
 If you are developing with a team, you may wish to continue including a `.env.example` file with your application. By putting placeholder values in the example configuration file, other developers on your team can clearly see which environment variables are needed to run your application.
 
-!!! note
-	Any variable in your `.env` file can be overridden by external environment variables such as server-level or system-level environment variables.
-
+::: tip Note
+Any variable in your `.env` file can be overridden by external environment variables such as server-level or system-level environment variables.
+:::
 #### Environment File Security
 
 All variables in your `.env` files are typically parsed as strings, so some reserved values have been created to allow you to return a wider range of types from the `env()` helper function:
@@ -108,8 +108,10 @@ The `debug` option in your `config/app.php` configuration file determines how mu
 
 For local development, you should set the `PL_APP_DEBUG` environment variable to `true`. **In your production environment, this value should always be `false`. If the variable is set to `true` in production, you risk exposing sensitive configuration values to your application's end users.**
 
-!!! tips
-	`Platine\Config\Config` implements `ArrayAccess` so you can easily access or set the configuration values using array direct access, see example below:
+::: tip Note
+`Platine\Config\Config` implements `ArrayAccess` so you can easily access or set the configuration values using array direct access.
+:::
+See example below:
 
 ```php
 <?php

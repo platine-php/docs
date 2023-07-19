@@ -56,9 +56,9 @@ Will output something like:
 
 `Hello, Tony`
 
-!!! note
-	Looking for more information on how to write templates? Check out the full [Template documentation](../packages/template.md) to get started.
-
+::: tip Note
+Looking for more information on how to write templates? Check out the full [Template documentation](../packages/template.md) to get started.
+:::
 ## Creating & Rendering Template
 
 You may create a template by placing a file with the `.html` extension (is configurable) in your application's `storage/resource/templates` directory. Platine templates contain HTML as well as directives that allow you to easily echo values, create "if" statements, iterate over data, and more.
@@ -179,9 +179,9 @@ class DemoAction
 }
 ```
 
-!!! important
-	In the rest of documentation we will use `TemplateResponse` for examples, but you can adapt it to use template engine.
-
+::: tip
+In the rest of documentation we will use `TemplateResponse` for examples, but you can adapt it to use template engine.
+::: 
 ## Passing Data To Template
 
 As you saw in the previous examples, you may pass an array of data to template to make that data available to the it:

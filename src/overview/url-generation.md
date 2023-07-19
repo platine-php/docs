@@ -81,9 +81,9 @@ To generate URL for route with parameters use the second parameter:
 
 
 
-!!! note
-	`RouteHelper` is only used for a named route
-
+::: tip Note
+`RouteHelper` is only used for a named route
+:::
 ## Accessing The Current URL
 
 You can access the current URL using the `Platine\Http\ServerRequestInterface` instance

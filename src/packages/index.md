@@ -10,7 +10,7 @@ Use [Composer](https://getcomposer.org) to install any of the packages in your P
 ```bash
 composer require platine-php/xxx
 ```
-::: tip
+::: tip Note
 **xxx** is the name of the package you want to install.
 :::
 
