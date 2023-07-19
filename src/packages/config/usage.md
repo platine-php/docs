@@ -1,5 +1,5 @@
 ---
-prev: /installation
+prev: ./installation
 next: ./loader
 ---
 # Usage

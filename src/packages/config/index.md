@@ -1,9 +1,9 @@
 ---
-prev: /
+prev: ../
 next: ./installation
 ---
 
-# Overview
+# Platine Config
 ## Introduction
 **Platine Config is the library used to manage the application configuration using differents loaders.**
 

@@ -3,15 +3,19 @@ home: true
 heroImage: /assets/img/logo.png
 tagline: Platine Framework Documentation
 actionText: Quick Start →
-actionLink: /overview
+actionLink: /welcome
 features:
 - title: Easy to use 
-  details: Usage of Platine Config is not complicated like others librairies.
-- title: Dot notation support
-  details: Simplified access to nested configuration using `dot.notation` syntax.
-- title: Environment based configuration
-  details: Configuration can be loaded base on the environment (dev, staging, production, etc.).
-- title: Custom loader
-  details: Supports configuration loader (files, database, memory and more).
-footer: MIT Licensed | Copyright © 2023-present Platine Team
+  details: Usage of Platine Framework is not complicated like others Framework.
+- title: Template Engine
+  details: Support of template engine with high performance, flexibility, fast, secure and easy syntax.
+- title: Modular
+  details: Modular and expandable design with support of extensions and plugins.
+- title: No external dependencies
+  details: A next-generation PHP Framework that does not depend on other libraries.
+- title: Middleware Support
+  details: Integrated with a variety of commonly used middleware.
+- title: Document Generation
+  details: Support generation of document (PDF, Office document templates (Microsoft Word, LibreOffice).
+footer: MIT Licensed | Copyright © 2023 Platine Framework
 ---

@@ -31,7 +31,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: 'platine-php/docs',
+    repo: 'platine-php/framework',
     editLinks: true,
     docsDir: 'src',
     repoLabel: 'Github',
@@ -43,15 +43,26 @@ module.exports = {
     searchPlaceholder: 'Search ...',
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'Overview', link: '/welcome' },
       { 
-        text: 'Docs', 
+        text: 'Getting Started', 
         items: [
-          { text: 'Overview', link: '/overview' },
-          { text: 'Installation', link: '/installation' },
-          { text: 'Usage', link: '/usage' },
-          { text: 'Loader', link: '/loader' },
+          { text: 'Installation', link: '/getting-started/installation' },
+          { text: 'Configuration', link: '/getting-started/configuration' },
+          { text: 'Architecture', link: '/getting-started/architecture' },
+          { text: 'Starter Project', link: '/getting-started/starter-project' },
+          { text: 'Deployment', link: '/getting-started/deployment' },
         ]
-      }
+      },
+      { 
+        text: 'General Concepts', 
+        items: [
+          { text: 'Lifecycle', link: '/general/lifecycle' },
+          { text: 'Container', link: '/general/container' },
+          { text: 'Service Providers', link: '/general/providers' },
+        ]
+      },
+      { text: 'Packages', link: '/packages/index' }
     ]
   },
 
@@ -60,7 +71,6 @@ module.exports = {
    */
   plugins: [
     '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-    ['vuepress-plugin-code-copy', true]
+    '@vuepress/plugin-medium-zoom'
   ]
 }

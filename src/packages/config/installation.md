@@ -1,5 +1,5 @@
 ---
-prev: /overview
+prev: ./
 next: ./usage
 ---
 # Installation

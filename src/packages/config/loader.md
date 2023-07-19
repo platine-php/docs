@@ -1,5 +1,5 @@
 ---
-prev: /usage
+prev: ./usage
 next: false
 ---
 # Loader
