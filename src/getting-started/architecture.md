@@ -46,7 +46,7 @@ The `Console` directory contains all of the custom Platine commands for your app
 
 #### The Exception Directory
 
-The `Exception` directory contains your application's exception and is also a good place to place any exceptions thrown by your application. In this directory you already have the application base exception class `Platine\App\Exception\ApplicationException`, it's recommended that all the application extend this base class.
+The `Exception` directory contains your application's exception and is also a good place to place any exceptions thrown by your application. In this directory you already have the application base exception class `Platine\App\Exception\ApplicationException`, it's recommended that all the application Exception extend this base class.
 
 #### The Http Directory
 

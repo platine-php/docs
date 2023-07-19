@@ -133,9 +133,9 @@ class WelcomeAction implements RequestHandlerInterface
 
 So the `Template` and `Application` dependencies will be resolved automatically.
 
-!!! note
-	These constructor's dependencies must to be binding in container first.
-
+::: tip Note
+These constructor's dependencies must to be binding in container first.
+:::
 ## Route Parameters
 
 Sometimes you will need to capture segments of the URI within your route. For example, you may need to capture a user's ID from the URL. You may do so by defining route parameters:

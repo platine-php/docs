@@ -8,7 +8,7 @@ Web server
 -----------
 - Any web server, the framework has been tested on Apache and
      Nginx.
-- Works on all major operating systems, including
+- Works on all major operating systems,
      including \* nix, MacOS and Windows.
 
 PHP

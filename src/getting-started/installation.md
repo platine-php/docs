@@ -34,9 +34,9 @@ Since many of Platine's configuration option values may vary depending on whethe
 
 Your `.env` file should not be committed to your application's source control, since each developer / server using your application could require a different environment configuration. Furthermore, this would be a security risk in the event an intruder gains access to your source control repository, since any sensitive credentials would get exposed.
 
-!!! info
-	For more information about the `.env` file and environment based configuration, check out the full [configuration](configuration.md).
-
+::: tip Info
+For more information about the `.env` file and environment based configuration, check out the full [configuration](configuration.md).
+::: 
 ### Directory Configuration
 
 Platine should always be served out of the root of the "web directory" configured for your web server. You should not attempt to serve a Platine application out of a subdirectory of the "web directory". Attempting to do so could expose sensitive files that exist within your application. Only `public` directory must be "web directory" of your application.
@@ -55,8 +55,9 @@ Platine may serve as a full stack framework. By "full stack" framework we mean t
 
 If this is how you plan to use Platine, you may want to check out our documentation on [routing](../overview/routing.md), [templates](../overview/template.md), or the [ORM](../orm/getting-started.md).
 
-!!! tips
-	If you want to get a head start building your application, check out one of our official [application starter](starter-project.md).
+::: tip Note
+If you want to get a head start building your application, check out one of our official [application starter](starter-project.md).
+:::
 
 ### The API Backend
 

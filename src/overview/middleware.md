@@ -44,9 +44,9 @@ As you can see, if the given `token` does not match our secret token, the middle
 
 It's best to envision middleware as a series of "layers" HTTP requests must pass through before they hit your application. Each layer can examine the request and even reject it entirely.
 
-!!! tips
-	All middleware are resolved via the [service container](../general/container.md), so you may type-hint any dependencies you need within a middleware's constructor.
-
+::: tip Important
+All middleware are resolved via the [service container](../general/container.md), so you may type-hint any dependencies you need within a middleware's constructor.
+:::
 #### Middleware & Responses
 
 Of course, a middleware can perform tasks before or after passing the request deeper into the application. For example, the following middleware would perform some task **before** the request is handled by the application:
@@ -98,13 +98,14 @@ class DemoMiddleware implements MiddlewareInterface
 }
 ```
 
-!!! note
-	A middleware can return an response if condition meet before the request reach the application itself.
+::: tip Note
+A middleware can return an response if condition meet before the request reach the application itself.
+:::
 
 ## Registering Middleware
 
 If you want a middleware to run during every HTTP request to your application, list the middleware class in the `config/middlewares.php` array.
 
-!!! important
-	The order is important when registering a middleware, the execution will beginning from the first to last.
-
+::: warning
+The order is important when registering a middleware, the execution will beginning from the first to last.
+:::

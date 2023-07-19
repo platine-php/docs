@@ -118,6 +118,6 @@ class WelcomeAction implements RequestHandlerInterface
 
 So the `Template` and `Application` dependencies will be resolved automatically.
 
-!!! note
-	These constructor's dependencies must to be binding in container first.
-
+::: tip Note
+These constructor's dependencies must to be binding in container first.
+:::

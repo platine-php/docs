@@ -14,8 +14,9 @@ If you open the `config/providers.php` file included with Platine, you will see 
 
 In this overview, you will learn how to write your own service providers and register them with your Platine application.
 
-!!! tips
-	If you would like to learn more about how Platine handles requests and works internally, check out our documentation on the Platine [lifecycle](lifecycle.md).
+::: tip Note
+If you would like to learn more about how Platine handles requests and works internally, check out our documentation on the Platine [lifecycle](lifecycle.md).
+:::
 
 ## Writing Service Providers
 
@@ -37,7 +38,6 @@ public function register(): void
     $this->app->bind(TranslatorInterface::class, GettextTranslator::class);
 }
 ```
-
 
 
 This service provider only defines a `register` method, and uses that method to define an implementation of `Platine\Lang\Translator\TranslatorInterface` in the service container. If you're not yet familiar with Platine's service container, check out [its documentation](container.md).
@@ -92,11 +92,31 @@ public function boot(): void
     $this->addCommand(MyCommand::class);
 }
 ```
-!!! important
-	The parameter should be the full class name that is binding to container or the class without constructor parameters that can be created using `new Mycommand()`
+::: tip Important
+The parameter should be the full class name that is binding to container or the class without constructor parameters that can be created using `new Mycommand()`.
+:::
 
 For more details see [Console application](../advanced/console.md).
 
+### The addTask Method
+
+If you want add tasks, this should be done using the `addTask ` method:
+
+```php
+<?php
+ /**
+ * {@inheritdoc}
+ */
+public function boot(): void
+{
+    $this->addTask(MyTask::class);
+}
+```
+::: tip Important
+The parameter should be the full class name that is binding to container or the class without constructor parameters that can be created using `new MyTask()`.
+:::
+
+For more details see [Console application](../advanced/console.md).
 
 ### The listen Method
 
@@ -114,8 +134,9 @@ public function boot(): void
 ```
 
 So when the event `MyEvent::class` is fired the listener `MyListener::class` will be called.
-!!! important
-	If the listener parameter is a string this should be the full class name that is binding to container or the class without constructor parameters that can be created using `new MyListener()`
+::: tip Important
+If the listener parameter is a string this should be the full class name that is binding to container or the class without constructor parameters that can be created using `new MyListener()`.
+:::
 
 See [Events](../advanced/events.md) for more details.
 
