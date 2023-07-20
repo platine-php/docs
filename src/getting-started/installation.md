@@ -20,7 +20,14 @@ php platine server
 
 Of course, you can change "example-app" in this command to anything you like. The Platine application's directory will be created within the directory you specify in the command argument here `example-app`.
 
-After the project has been created, you can navigate to the application directory and start Platine development.
+After the project has been created, you can navigate to the application directory and start Platine development.  
+If you intent to use package that need publish like [Platine Validator](../overview/validation), you must publish all the components (migration, translation, configuration file, ...) by using the Platine command below:
+```bash
+php platine vendor:publish platine-php/validator -a
+```
+::: tip Note
+`platine-php/validator` is the name of the composer package and the option `-a` mean publish everything released with the given package.
+:::
 
 ## Initial Configuration
 

@@ -10,6 +10,10 @@ module.exports = {
    */
   description: description,
 
+  markdown: {
+    lineNumbers: true
+  },
+
   /**
    * Extra tags to be injected to the page HTML `<head>`
    *
