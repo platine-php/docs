@@ -4,7 +4,7 @@ next: ./loader
 ---
 # Usage
 ## Basic Usage
-There are three steps to using this library:
+There are three steps to do before using this library:
 1. Create configurations based on loader
 1. Define loader
 1. Instantiate the configuration
