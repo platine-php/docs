@@ -30,6 +30,7 @@ composer require platine-php/xxx
 - [Platine Lang](./lang)
 - [Platine Logger](./logger)
 - [Platine Mail](./mail)
+- [Platine OAuth2](./oauth2)
 - [Platine ORM](./orm)
 - [Platine Pagination](./pagination)
 - [Platine PDF](./pdf)

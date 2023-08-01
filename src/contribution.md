@@ -29,6 +29,7 @@ The Platine source code is managed on GitHub, and there are repositories for eac
 - [Platine Lang](https://github.com/platine-php/lang)
 - [Platine Logger](https://github.com/platine-php/logger)
 - [Platine Mail](https://github.com/platine-php/mail)
+- [Platine OAuth2](https://github.com/platine-php/oauth2)
 - [Platine ORM](https://github.com/platine-php/orm)
 - [Platine Pagination](https://github.com/platine-php/pagination)
 - [Platine PDF](https://github.com/platine-php/pdf)
