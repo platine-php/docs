@@ -23,6 +23,7 @@ composer require platine-php/xxx
 - [Platine Cookie](./cookie)
 - [Platine Database](./database)
 - [Platine Docx Template](./docx-template)
+- [Platine ETL](./etl)
 - [Platine Event Dispatcher](./event-dispatcher)
 - [Platine Filesystem](./filesystem)
 - [Platine Framework](./framework)
