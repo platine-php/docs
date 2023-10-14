@@ -22,6 +22,7 @@ The Platine source code is managed on GitHub, and there are repositories for eac
 - [Platine Cookie](https://github.com/platine-php/cookie)
 - [Platine Database](https://github.com/platine-php/database)
 - [Platine Docx Template](https://github.com/platine-php/docx-template)
+- [Platine ETL](https://github.com/platine-php/etl)
 - [Platine Event Dispatcher](https://github.com/platine-php/event-dispatcher)
 - [Platine Filesystem](https://github.com/platine-php/filesystem)
 - [Platine Framework](https://github.com/platine-php/framework)
