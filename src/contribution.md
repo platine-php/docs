@@ -43,6 +43,7 @@ The Platine source code is managed on GitHub, and there are repositories for eac
 - [Platine Upload](https://github.com/platine-php/upload)
 - [Platine User Agent](https://github.com/platine-php/user-agent)
 - [Platine Validator](https://github.com/platine-php/validator)
+- [Platine Webauthn](https://github.com/platine-php/webauthn)
 
 ## Support Questions
 
